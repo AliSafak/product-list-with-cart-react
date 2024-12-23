@@ -8,7 +8,7 @@ const products = [
     id: 1,
     quantity: 0,
     price: "6.50",
-    photo: "./assets/img/img/waffle.png"
+    photo: "./img/img/waffle.png"
   },
 
   {
@@ -17,7 +17,7 @@ const products = [
     id: 2,
     quantity: 0,
     price: "7.00",
-    photo: "./assets/img/img/creme-brule.png"
+    photo: "./img/img/creme-brule.png"
   },
 
   {
@@ -26,7 +26,7 @@ const products = [
     id: 3,
     quantity: 0,
     price: "8.00",
-    photo: "./assets/img/img/Macaroon.png"
+    photo: "./img/img/Macaroon.png"
   },
 
   {
@@ -34,7 +34,7 @@ const products = [
     id: 4,
     quantity: 0,
     price: "5.50",
-    photo: "./assets/img/img/tramisu.png",
+    photo: "./img/img/tramisu.png",
     description: "Classic Tiramisu",
   },
 
@@ -43,7 +43,7 @@ const products = [
     id: 5,
     quantity: 0,
     price: "4.00",
-    photo: "./assets/img/img/baklava.png",
+    photo: "./img/img/baklava.png",
     description: "Pistachio Baklava",
   },
 
@@ -52,7 +52,7 @@ const products = [
     id: 6,
     quantity: 0,
     price: "5.00",
-    photo: "./assets/img/img/pie.png",
+    photo: "./img/img/pie.png",
     description: "Lemon Meringue Pie",
   },
 
@@ -61,7 +61,7 @@ const products = [
     id: 7,
     quantity: 0,
     price: "4.50",
-    photo: "./assets/img/img/redVelvet.png",
+    photo: "./img/img/redVelvet.png",
     description: "Red Velvet Cake",
   },
 
@@ -70,7 +70,7 @@ const products = [
     id: 8,
     quantity: 0,
     price: "5.50",
-    photo: "./assets/img/img/brownie.png",
+    photo: "./img/img/brownie.png",
     description: "Salted Caramel Brownie",
   },
 
@@ -79,7 +79,7 @@ const products = [
     id: 9,
     quantity: 0,
     price: " 6.50",
-    photo: "./assets/img/img/panaCota.png",
+    photo: "./img/img/panaCota.png",
     description: "Vanilla Panna Cotta",
   },
 ];
@@ -117,7 +117,7 @@ function ProductCard({ product }) {
         <div className='product-header'>
           <img src={product.photo} alt="" />
           <button className='add-to-cart-button'>
-            <img src="./assets/img/shopping-icon.png" /> Add to Cart
+            <img src="./img/shopping-icon.png" /> Add to Cart
           </button>
         </div>
         <h1>{product.name}</h1>
@@ -132,7 +132,7 @@ function BasketArea() {
   return (
     <div className="payment-section">
       <h2>Your Cart(0)</h2>
-      <img src="./assets/img/img/basket-empty.svg" alt="" />
+      <img src="./img/img/basket-empty.svg" alt="" />
       <p>Your added items will appear here</p>
     </div>
   )
