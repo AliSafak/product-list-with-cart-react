@@ -1,0 +1,181 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    font-family: "Red Hat Text";
+    background-color: #FCF8F6;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+.product-area {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+}
+
+
+
+.product-header {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.add-to-cart-button {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    bottom: -22px;
+    width: 160px;
+    height: 44px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    left: 83.5px;
+    right: 83.5px;
+    border: 1px solid #AD8A85;
+    background-color: white;
+    font-weight: bold;
+    font-weight: 600;
+    line-height: 18.52px;
+    cursor: pointer;
+}
+
+.container {
+    padding-inline: 24px;
+
+}
+
+
+
+.product h1 {
+    color: #87635A;
+    font-weight: 400;
+    line-height: 18.52px;
+    font-size: medium;
+}
+
+.product p {
+    font-size: var(--spacing200);
+    font-weight: 600;
+    line-height: 21.17px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-block: 4px;
+}
+
+.product h3 {
+    font-size: var(--spacing200);
+    font-weight: 600;
+    line-height: 21.17px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #C73B0F
+}
+
+.payment-section {
+    background-color: white;
+    margin-inline: 24px;
+    padding: 24px;
+    margin-block:32px  24px;
+    border-radius: 25px;
+}
+
+.payment-section img {
+    margin-inline: auto;
+    padding-block: 16px;
+}
+
+.payment-section p {
+    font-weight: 600;
+    line-height: 18.52px;
+    text-align: center;
+    color: #87635A;
+}
+
+.payment-section h2 {
+    font-weight: 700;
+    line-height: 31.75px;
+    text-align: left;
+    color: #C73B0F
+}
+
+@media( width>600px) {
+
+    .container {
+        padding: 40px;
+    }
+    .product-area {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+}
+
+@media( width>1250px) {
+   
+}
